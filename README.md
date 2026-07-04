@@ -1,21 +1,39 @@
-VisionLens: Object Detection Playground
-VisionLens is a web application that detects objects in images and live webcam feeds. It lets users compare two different AI approaches: a fast industry-standard model (YOLOv8) and a flexible research model (Grounding DINO) that can find anything you type.
+<div align="center">
 
-🚀 Click Here to Try the Live Demo
+# 🔍 VisionLens
+### Industry Standard vs. Research Frontier in Object Detection
 
-Features
-Automatic Detection: Instantly finds common objects like people, cars, dogs, and chairs in any image.
-Custom Text Search: Type what you are looking for (e.g., "coffee cup, bird, phone") and the AI will locate it, even if it wasn't specifically trained on that exact item.
-Live Webcam Support: Turn on your camera directly in the browser to test the AI on real-time video.
-Side-by-Side Comparison: Easily switch between the two AI models to see the difference in speed and flexibility.
-How to Use
-Go to the live demo link above.
-Under the "Automatic" tab, upload any photo or click the webcam icon to use your camera.
-Click the "Detect Objects" button to see instant results.
-Switch to the "Open-Vocab" tab to try typing your own custom objects to search for.
-Built With
-Python
-PyTorch
-YOLOv8 (by Ultralytics)
-Grounding DINO (by IDEA-Research)
-Gradio (for the web interface)
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org)
+[![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-00FF00.svg)](https://github.com/ultralytics/ultralytics)
+[![Grounding DINO](https://img.shields.io/badge/Grounding_DINO-Research-FFA500.svg)](https://arxiv.org/abs/2303.05499)
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Hugging_Face-blue)](https://huggingface.co/spaces/gujarkaleem07/visionlens)
+
+**[Click here to try the live demo with webcam support](https://huggingface.co/spaces/gujarkaleem07/visionlens)**
+
+</div>
+
+---
+
+### 🧠 The Core Concept
+Traditional object detectors are locked to 80 fixed classes. If they haven't seen an object during training, they can't detect it. **VisionLens** breaks this barrier by letting you compare **YOLOv8** (fast, but fixed) against **Grounding DINO** (slower, but detects *anything* you type).
+
+### ✨ Project Highlights
+- **⚡ Blazing Fast YOLOv8:** Instantly detects people, cars, and animals with state-of-the-art accuracy.
+- **💬 Zero-Shot Detection:** Type "coffee cup" or "rare bird" into Grounding DINO and it finds it without retraining.
+- **📹 Live Webcam Support:** Real-time browser inference to test models on live video feeds.
+- **🛡️ Crash-Proof Architecture:** Built-in dynamic image resizing to prevent CPU memory errors on free hosting.
+
+### ⚖️ The Comparison
+| Architecture | Speed | Flexibility |
+| :--- | :--- | :--- |
+| **YOLOv8** (Industry Standard) | ⚡ Lightning Fast | Locked to 80 classes |
+| **Grounding DINO** (Research Frontier) | 🐢 Moderate | ✅ Unlimited (Text-prompted) |
+
+### 🛠️ Tech Stack
+- **Deep Learning:** PyTorch
+- **Models:** YOLOv8-Nano, Grounding DINO-Tiny
+- **Interface:** Gradio 4.0+
+
+
+
